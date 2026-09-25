@@ -10,9 +10,23 @@
 </head>
 
 <body class="bg-[#0C1014] h-full overflow-hidden">
-    <div class="flex mx-auto h-screen pl-56">
+    <div class="flex mx-auto h-screen pl-56 max-[600px]:pl-16 max-[700px]:pl-24 max-[800px]:pl-28 max-[550px]:pl-0 ">
         <div
-            class="group fixed left-0 top-0 h-screen w-16 hover:w-56 flex flex-col items-start justify-between py-6 pt-8 pb-8 bg-[#0C1014] overflow-hidden transition-all duration-300 ease-in-out z-50">
+            class="hidden max-[550px]:flex fixed top-0 left-0 w-full h-12 flex-row items-center justify-between px-4 bg-[#0C1014] border-b border-neutral-800 z-50">
+
+            <a href="#" class="flex items-center justify-center">
+                <img class="w-6 h-6 invert" src="svgs/instagram-add-new-post-icon.svg" alt="add-logo">
+            </a>
+
+            <span class="text-white text-xl font-semibold ">Instagram</span>
+
+            <a href="#" class="flex items-center justify-center">
+                <img class="w-6 h-6 invert" src="svgs/instagram-heart-icon.svg" alt="activity-logo">
+            </a>
+
+        </div>
+        <div
+            class="group fixed left-0 top-0 h-screen w-16 hover:w-56 hidden min-[551px]:flex flex-col items-start justify-between py-6 pt-8 pb-8 bg-[#0C1014] overflow-hidden transition-all duration-300 ease-in-out z-50">
 
             <img class="w-8 h-8 invert ml-4" src="svgs/instagram-logo-facebook-2-svgrepo-com.svg" alt="instagram-logo">
 
@@ -32,8 +46,7 @@
                     <li class="w-full">
                         <a href="#"
                             class="flex items-center gap-4 mx-2 px-3 py-2.5 rounded-full hover:bg-neutral-800/50">
-                            <img class="w-6 h-6 shrink-0" src="svgs/instagram-reels-white-icon.svg"
-                                alt="reel-logo">
+                            <img class="w-6 h-6 shrink-0" src="svgs/instagram-reels-white-icon.svg" alt="reel-logo">
                             <span
                                 class="text-white whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200">Reels</span>
                         </a>
@@ -100,14 +113,33 @@
             </div>
 
         </div>
+        <div
+            class="hidden max-[550px]:flex fixed bottom-0 left-0 w-full h-16 flex-row items-center justify-around bg-[#0C1014] border-t border-neutral-800 z-50">
+            <a href="#" class="flex items-center justify-center">
+                <img class="w-6 h-6 max-[550px]:w-5 max-[550px]:h-5 invert" src="svgs/instagram-home-feed-icon.svg" alt="home-logo">
+            </a>
+            <a href="#" class="flex items-center justify-center">
+                <img class="w-6 h-6 max-[550px]:w-5 max-[550px]:h-5" src="svgs/instagram-reels-white-icon.svg" alt="reel-logo">
+            </a>
+            <a href="#" class="flex items-center justify-center">
+                <img class="w-6 h-6 max-[550px]:w-5 max-[550px]:h-5 invert" src="svgs/instagram-share-icon.svg" alt="message-logo">
+            </a>
+            <a href="#" class="flex items-center justify-center">
+                <img class="w-6 h-6 max-[550px]:w-5 max-[550px]:h-5 invert" src="svgs/instagram-search-icon.svg" alt="search-logo">
+            </a>
+            <a href="#" class="flex items-center justify-center">
+                <img class="w-7 h-7 max-[550px]:w-6 max-[550px]:h-6 rounded-full object-cover" src="svgs/dfc32522-b05e-440f-bb24-6adcc1ef66f7.jpg"
+                    alt="pfp">
+            </a>
+        </div>
 
-        <div class="flex-1 max-w-md mx-auto overflow-y-auto py-6 scrollbar-hide min-w-[350px]">
-            <div class="flex gap-4 overflow-x-auto overflow-y-hidden mb-6">
+        <div class="flex-1 max-w-md mx-auto overflow-y-auto py-6 scrollbar-hide sm:ml-2 max-[520px]:min-w-0 max-[550px]:pt-16 ">
+            <div class="flex gap-4 overflow-x-auto overflow-y-hidden mb-6 scrollbar-hide">
                 <ul class="flex space-x-6 scrollbar-hidden">
                     <li class="flex flex-col items-center space-y-1 shrink-0">
                         <div class="bg-gradient-to-tr from-yellow-400 to-fuchsia-600 p-1 rounded-full">
                             <a href="#" class="bg-[#0C1014] block p-0.5 rounded-full ">
-                                <img class="h-16 w-16 rounded-full" src="svgs/dfc32522-b05e-440f-bb24-6adcc1ef66f7.jpg"
+                                <img class="h-16 w-16 max-[550px]:w-14 max-[550px]:h-14 rounded-full" src="svgs/dfc32522-b05e-440f-bb24-6adcc1ef66f7.jpg"
                                     alt="">
                             </a>
                         </div>
@@ -116,7 +148,7 @@
                     <li class="flex flex-col items-center space-y-1 shrink-0">
                         <div class="bg-gradient-to-tr from-yellow-400 to-fuchsia-600 p-1 rounded-full">
                             <a href="#" class="bg-[#0C1014] block p-0.5 rounded-full ">
-                                <img class="h-16 w-16 rounded-full"
+                                <img class="h-16 w-16 max-[550px]:w-14 max-[550px]:h-14 rounded-full"
                                     src="svgs/669829782_18589822423005268_7351903018633133931_n.jpg" alt="">
                             </a>
                         </div>
@@ -125,7 +157,7 @@
                     <li class="flex flex-col items-center space-y-1 shrink-0">
                         <div class="bg-gradient-to-tr from-yellow-400 to-fuchsia-600 p-1 rounded-full">
                             <a href="#" class="bg-[#0C1014] block p-0.5 rounded-full ">
-                                <img class="h-16 w-16 rounded-full" src="svgs/AzenKura_logo_black.png" alt="">
+                                <img class="h-16 w-16 max-[550px]:w-14 max-[550px]:h-14 rounded-full" src="svgs/AzenKura_logo_black.png" alt="">
                             </a>
                         </div>
                         <a href="#" class="text-white">azenkura</a>
@@ -133,7 +165,7 @@
                     <li class="flex flex-col items-center space-y-1 shrink-0">
                         <div class="bg-gradient-to-tr from-yellow-400 to-fuchsia-600 p-1 rounded-full">
                             <a href="#" class="bg-[#0C1014] block p-0.5 rounded-full ">
-                                <img class="h-16 w-16 rounded-full"
+                                <img class="h-16 w-16 max-[550px]:w-14 max-[550px]:h-14 rounded-full"
                                     src="svgs/545442452_18077476060949730_7804936324514237666_n.jpg" alt="">
                             </a>
                         </div>
@@ -147,20 +179,20 @@
                     <div class="flex items-center justify-between gap-5">
                         <div class="flex items-center gap-2">
                             <img src="svgs/dfc32522-b05e-440f-bb24-6adcc1ef66f7.jpg"
-                                class="w-9 h-9 rounded-full object-cover" alt="microsoft-pfp">
+                                class="w-9 h-9 max-[550px]:w-7 max-[550px]:h-7 rounded-full object-cover" alt="microsoft-pfp">
                             <div class="flex flex-col">
                                 <div class="flex items-center gap-1 text-sm">
-                                    <span class="font-bold text-white">Verlio</span>
-                                    <img class="w-4 h-4 text-blue-500"
+                                    <span class="font-bold text-white max-[550px]:text-sm">Verlio</span>
+                                    <img class="w-4 h-4 max-[550px]:w-3 max-[550px]:h-3 text-blue-500"
                                         src="svgs/verified_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                                         alt="verified-logo">
-                                    <span class="text-neutral-500">· 6d</span>
+                                    <span class="text-neutral-500 max-[550px]:text-sm">· 6d</span>
                                 </div>
-                                <span class="text-sm text-white">GLOBAL</span>
+                                <span class="text-sm text-white max-[550px]:text-xs">GLOBAL</span>
                             </div>
                         </div>
                         <div>
-                            <img class="w-5 h-5 text-white"
+                            <img class="w-5 h-5 max-[550px]:w-4 max-[550px]:h-4 text-white"
                                 src="svgs/more_horiz_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="more">
                         </div>
                     </div>
@@ -168,13 +200,13 @@
                         <img src="svgs/verlio posts (10).png" class="w-full h-auto object-cover" alt="post-1">
 
                         <button
-                            class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-gray-400 flex items-center justify-center">
-                            <img class="w-4 h-4 invert" src="svgs\arrow_back_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
-                                alt="previous">
+                            class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 max-[520px]:hidden rounded-full bg-gray-400 flex items-center justify-center">
+                            <img class="w-4 h-4 max-[520px]:hidden invert"
+                                src="svgs\arrow_back_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="previous">
                         </button>
                         <button
-                            class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-gray-400  flex items-center justify-center">
-                            <img class="w-4 h-4 invert"
+                            class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 max-[520px]:hidden rounded-full bg-gray-400  flex items-center justify-center">
+                            <img class="w-4 h-4 max-[520px]:hidden invert"
                                 src="svgs\arrow_forward_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="next">
                         </button>
                     </div>
@@ -186,30 +218,35 @@
                     <div class="flex items-center justify-between text-neutral-400 text-sm">
                         <div class="flex items-center gap-6">
                             <div class="flex items-center gap-1.5">
-                                <img class="w-6 h-6 invert" src="svgs/instagram-heart-icon.svg" alt="like">
-                                <p class="text-sm text-white">1.4K</p>
+                                <img class="w-6 h-6 max-[470px]:w-5 max-[470px]:h-5 invert"
+                                    src="svgs/instagram-heart-icon.svg" alt="like">
+                                <p class="text-sm max-[470px]:text-xs text-white">1.4K</p>
                             </div>
                             <div class="flex items-center gap-1.5">
-                                <img class="w-6 h-6 invert" src="svgs/instagram-comment-icon.svg" alt="comment">
-                                <p class="text-sm text-white">32</p>
+                                <img class="w-6 h-6 max-[470px]:w-5 max-[470px]:h-5 invert"
+                                    src="svgs/instagram-comment-icon.svg" alt="comment">
+                                <p class="text-sm max-[470px]:text-xs text-white">32</p>
                             </div>
                             <div class="flex items-center gap-1.5">
-                                <img class="w-6 h-6 invert" src="svgs/icons8-repost-64.png" alt="repost">
-                                <p class="text-sm text-white">24</p>
+                                <img class="w-6 h-6 max-[470px]:w-5 max-[470px]:h-5 invert"
+                                    src="svgs/icons8-repost-64.png" alt="repost">
+                                <p class="text-sm max-[470px]:text-xs text-white">24</p>
                             </div>
-                            <img class="w-6 h-6 invert" src="svgs/instagram-share-icon.svg" alt="share">
+                            <img class="w-6 h-6 max-[470px]:w-5 max-[470px]:h-5 invert"
+                                src="svgs/instagram-share-icon.svg" alt="share">
                         </div>
-                        <img class="w-6 h-6 invert" src="svgs/instagram-save-icon.svg" alt="save">
+                        <img class="w-6 h-6 max-[470px]:w-5 max-[470px]:h-5 invert" src="svgs/instagram-save-icon.svg"
+                            alt="save">
                     </div>
                 </div>
                 <div class="flex flex-row items-center gap-1 text-sm text-white mt-1">
                     <p class="flex items-start gap-1">
                         <span class="font-bold flex items-center gap-1 shrink-0">
                             verlio
-                            <img class="w-3.5 h-3.5" src="svgs/verified_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
-                                alt="verified-logo">
+                            <img class="w-3.5 h-3.5 max-[470px]:w-2.5 max-[470px]:h-2.5"
+                                src="svgs/verified_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="verified-logo">
                         </span>
-                        <span class="min-w-0 wrap-anywhere scrollbar-none ">
+                        <span class="min-w-0 wrap-anywhere scrollbar-none max-[470px]:text-xs ">
                             Confidence that Verlio provides is part of our portfolio. Great design. Solid code. And the
                             confidence to know it's all in good hands.
                         </span>
@@ -219,20 +256,20 @@
                     <div class="flex items-center justify-between gap-5">
                         <div class="flex items-center gap-2">
                             <img src="svgs/dfc32522-b05e-440f-bb24-6adcc1ef66f7.jpg"
-                                class="w-9 h-9 rounded-full object-cover" alt="microsoft-pfp">
+                                class="w-9 h-9 max-[550px]:w-7 max-[550px]:h-7 rounded-full object-cover" alt="verlio-pfp">
                             <div class="flex flex-col">
                                 <div class="flex items-center gap-1 text-sm">
-                                    <span class="font-bold text-white">Verlio</span>
-                                    <img class="w-4 h-4 text-blue-500"
+                                    <span class="font-bold text-white max-[550]:text-sm">Verlio</span>
+                                    <img class="w-4 h-4 max-[550px]:w-3 max-[550px]:h-3 text-blue-500"
                                         src="svgs/verified_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                                         alt="verified-logo">
-                                    <span class="text-neutral-500">· 15d</span>
+                                    <span class="text-neutral-500 max-[550px]:text-sm">· 15d</span>
                                 </div>
-                                <span class="text-sm text-white">GLOBAL</span>
+                                <span class="text-sm text-white max-[550px]:text-xs">GLOBAL</span>
                             </div>
                         </div>
                         <div>
-                            <img class="w-5 h-5 text-white"
+                            <img class="w-5 h-5 max-[550px]:w-4 max-[550px]:h-4 text-white"
                                 src="svgs/more_horiz_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="more">
                         </div>
                     </div>
@@ -240,13 +277,13 @@
                         <img src="svgs/verlio posts (9).png" class="w-full h-auto object-cover" alt="post-2">
 
                         <button
-                            class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-gray-400 flex items-center justify-center">
-                            <img class="w-4 h-4 invert" src="svgs\arrow_back_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                            class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 max-[550px]:hidden rounded-full bg-gray-400 flex items-center justify-center">
+                            <img class="w-4 h-4 max-[550px]:hidden invert" src="svgs\arrow_back_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                                 alt="previous">
                         </button>
                         <button
-                            class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-gray-400  flex items-center justify-center">
-                            <img class="w-4 h-4 invert"
+                            class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 max-[550px]:hidden rounded-full bg-gray-400  flex items-center justify-center">
+                            <img class="w-4 h-4 max-[550px]:hidden invert"
                                 src="svgs\arrow_forward_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="next">
                         </button>
                     </div>
@@ -258,20 +295,20 @@
                     <div class="flex items-center justify-between text-neutral-400 text-sm">
                         <div class="flex items-center gap-6">
                             <div class="flex items-center gap-1.5">
-                                <img class="w-6 h-6 invert" src="svgs/instagram-heart-icon.svg" alt="like">
-                                <p class="text-sm text-white">1K</p>
+                                <img class="w-6 h-6 max-[550px]:w-5 max-[550px]:h-5 invert" src="svgs/instagram-heart-icon.svg" alt="like">
+                                <p class="text-sm max-[550px]:text-xs text-white">1K</p>
                             </div>
                             <div class="flex items-center gap-1.5">
-                                <img class="w-6 h-6 invert" src="svgs/instagram-comment-icon.svg" alt="comment">
-                                <p class="text-sm text-white">100</p>
+                                <img class="w-6 h-6 max-[550px]:w-5 max-[550px]:h-5 invert" src="svgs/instagram-comment-icon.svg" alt="comment">
+                                <p class="text-sm max-[550px]:text-xs text-white">100</p>
                             </div>
                             <div class="flex items-center gap-1.5">
-                                <img class="w-6 h-6 invert" src="svgs/icons8-repost-64.png" alt="repost">
-                                <p class="text-sm text-white">17</p>
+                                <img class="w-6 h-6 max-[550px]:w-5 max-[550px]:h-5 invert" src="svgs/icons8-repost-64.png" alt="repost">
+                                <p class="text-sm max-[550px]:text-xs text-white">17</p>
                             </div>
-                            <img class="w-6 h-6 invert" src="svgs/instagram-share-icon.svg" alt="share">
+                            <img class="w-6 h-6 max-[550px]:w-5 max-[550px]:h-5 invert" src="svgs/instagram-share-icon.svg" alt="share">
                         </div>
-                        <img class="w-6 h-6 invert" src="svgs/instagram-save-icon.svg" alt="save">
+                        <img class="w-6 h-6 max-[550px]:w-5 max-[550px]:h-5 invert" src="svgs/instagram-save-icon.svg" alt="save">
                     </div>
                 </div>
                 <div class="flex flex-row items-center gap-1 text-sm text-white mt-1">
@@ -362,7 +399,7 @@
             </div>
         </div>
         <button
-            class="fixed bottom-6 right-6 flex justify-start w-64 gap-2 bg-[#38393E] text-white px-11 pl-8 py-5 rounded-full shadow-lg hover:bg-neutral-700 transition">
+            class="fixed bottom-6 right-6 flex max-[550px]:hidden justify-start w-64 gap-2 bg-[#38393E] text-white px-11 pl-8 py-5 rounded-full shadow-lg hover:bg-neutral-700 transition">
             <img class="w-5 h-5 invert" src="svgs/instagram-share-icon.svg" alt="messages">
             <span class="text-sm font-medium">Messages</span>
         </button>
